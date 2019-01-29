@@ -24,9 +24,12 @@ liff.init(
   console.log('error', err);
 });
 
-setTimeout(function(){
-  window.location.href = 'class://scan?userId='+userid;
-  }, 2000);
+ $.ajax({
+      type: "POST",
+      url: "class://scan?userId="+userid,
+      success: window.location.replace("class://scan?userId="+userid);
+});
+
 </script>
 
 </body>
