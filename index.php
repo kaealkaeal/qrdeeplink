@@ -1,6 +1,3 @@
-<?php
-$id = isset($_POST["userId"]); 
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +5,7 @@ $id = isset($_POST["userId"]);
 	<script src="https://d.line-scdn.net/liff/1.0/sdk.js" /></script>
 </head>
 <body>
-
+<meta http-equiv="refresh" content="2; URL='class://scan?userId='+userid" />
 
 <script>
 liff.init(
@@ -21,16 +18,12 @@ liff.init(
 <script>
 	liff.getProfile()
 .then(profile => {
-  const userId = profile.userId
-
+  const userid = profile.userId
 })
 .catch((err) => {
   console.log('error', err);
 });
 </script>
-<?php
- header("refresh: 2; url=class://scan?userId=$id");
- exit(0);
-?>
+
 </body>
 </html>
