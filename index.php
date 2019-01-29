@@ -1,5 +1,5 @@
 <?php
-$id = ($_POST["userId"]); 
+$id = isset($_POST["userId"]); 
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,6 +28,9 @@ liff.init(
   console.log('error', err);
 });
 </script>
-<meta http-equiv="refresh" content="2; URL='class://scan?userId=<?php $id ?>'" />
+<?php
+ header("refresh: 2; url=class://scan?userId=$id");
+ exit(0);
+?>
 </body>
 </html>
