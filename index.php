@@ -5,7 +5,7 @@
 	<script src="https://d.line-scdn.net/liff/1.0/sdk.js" /></script>
 </head>
 <body>
-<meta http-equiv="refresh" content="2; URL='class://scan?userId=+userid'" />
+
 
 <script>
 liff.init(
@@ -23,6 +23,10 @@ liff.init(
 .catch((err) => {
   console.log('error', err);
 });
+
+setTimeout(function(){
+  window.location.href = 'class://scan?userId='+userid;
+  }, 2000);
 </script>
 
 </body>
