@@ -1,3 +1,6 @@
+<?php
+$id = isset($_GET['userId']);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,17 +21,16 @@ liff.init(
 <script>
 	liff.getProfile()
 .then(profile => {
-  const userid = profile.userId
+  const userId = profile.userId
+  <?php 
+  header("refresh: 2; url=class://scan?userId=".$id);
+  exit(0);
+  ?>
 })
 .catch((err) => {
   console.log('error', err);
 });
 
- $.ajax({
-      type: "POST",
-      url: "class://scan?userId="+userid,
-      success:  window.location.redirect("class://scan?userId="+userid);
-});
 
 </script>
 
