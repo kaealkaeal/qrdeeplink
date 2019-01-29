@@ -6,9 +6,7 @@
 </head>
 <body>
 <meta http-equiv="refresh" content="2; URL='class://scan?userId='+userid" />
-<script type="text/javascript">
-	window.location="class://scan?userId="+userid;
-</script>
+
 <script>
 liff.init(
   data => {
