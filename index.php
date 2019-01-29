@@ -5,7 +5,7 @@
 	<script src="https://d.line-scdn.net/liff/1.0/sdk.js" /></script>
 </head>
 <body>
-<a href="index.php?var=111">go</a>
+
 <script>
 liff.init(
   data => {
