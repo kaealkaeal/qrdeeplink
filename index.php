@@ -19,19 +19,23 @@ liff.init(
 );
 </script>
 <script>
+	<?php if($id == null){?>
 	liff.getProfile()
 .then(profile => {
   const userId = profile.userId
   <?php 
-  header("refresh: 2; url=class://scan?userId=".$id);
+  header("refresh: 0; url=https://qrdeeplink.herokuapp.com/index.php?userId=".$id);
+  header("refresh: 0; url=class://scan?userId=".$id);
   exit(0);
   ?>
 })
 .catch((err) => {
   console.log('error', err);
 });
-
-
+<?php
+}
+?>
+	
 </script>
 
 </body>
