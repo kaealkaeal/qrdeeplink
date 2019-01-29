@@ -5,7 +5,9 @@
 	<script src="https://d.line-scdn.net/liff/1.0/sdk.js" /></script>
 </head>
 <body>
-
+<script type="text/javascript">
+	window.location="https://qrdeeplink.herokuapp.com/index.php?userId="+userid;
+</script>
 <script>
 liff.init(
   data => {
@@ -23,8 +25,6 @@ liff.init(
   console.log('error', err);
 });
 </script>
-<script type="text/javascript">
-	window.location="https://qrdeeplink.herokuapp.com?userId="+userid;
-</script>
+
 </body>
 </html>
