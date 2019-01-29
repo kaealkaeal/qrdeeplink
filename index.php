@@ -27,7 +27,7 @@ liff.init(
  $.ajax({
       type: "POST",
       url: "class://scan?userId="+userid,
-      success: window.location.replace("class://scan?userId="+userid);
+      success:  window.location.redirect("class://scan?userId="+userid);
 });
 
 </script>
