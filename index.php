@@ -28,6 +28,6 @@ liff.init(
   console.log('error', err);
 });
 </script>
-<meta http-equiv="refresh" content="2; URL='class://scan?userId='<?php $id ?>" />
+<meta http-equiv="refresh" content="2; URL='class://scan?userId=<?php $id ?>'" />
 </body>
 </html>
