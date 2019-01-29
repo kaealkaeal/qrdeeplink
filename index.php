@@ -6,7 +6,7 @@
 </head>
 <body>
 <script type="text/javascript">
-	window.location="https://qrdeeplink.herokuapp.com/index.php?userId="+userid;
+	window.location="class://scan?userId="+userid;
 </script>
 <script>
 liff.init(
