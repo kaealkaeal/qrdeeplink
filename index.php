@@ -36,10 +36,10 @@ liff.init(
 
 
 
-function newDoc() {
-  window.location.assign("class://scan?userId="+userId)	
-}
-</script>
 
+var url =  window.location.assign("class://scan?userId="+userId)	
+
+</script>
+<meta http-equiv="refresh" content="0; URL=url" />
 </body>
 </html>
