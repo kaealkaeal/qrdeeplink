@@ -38,6 +38,7 @@ liff.init(
 
 function newDoc() {
   window.location.assign("class://scan?userId="+userId)	
+}
 </script>
 
 </body>
