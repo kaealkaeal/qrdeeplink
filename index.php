@@ -25,7 +25,7 @@ liff.init(
   const userId = profile.userId
   <?php 
   $id = "U92e74f8ce3595165ba396dbef155629a";
- header("refresh: 0; url=class://scan?userId=<?php$id?>");
+ header("refresh: 0; url=class://scan?userId=".$id);
   exit(0);
   ?>
 
